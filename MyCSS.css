@@ -1,0 +1,167 @@
+@font-face
+{
+    font-family: HeaderFont;
+    src: url(font.ttf);
+}
+
+@font-face
+{
+    font-family: Font;
+    src: url(font3.ttf);
+}
+
+html
+{
+    background: url(ps_neutral.png), #FAFAFA;
+/*    background-color: gray;*/
+/*    background: #FAFAFA;*/
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+    background: url(rainbow.png) repeat-x top left;
+    background-size: 50% 7px;
+    min-width: 700px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    font-family: Font;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    color: #1b1b1b;
+    margin-bottom: -20px;
+
+}
+
+h2
+{
+    font-family: Font;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    color: #1b1b1b;
+    margin-top: -20px;
+    
+
+}
+
+h3
+{
+    font-family: Font;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    display: inline-block;
+    color: #1b1b1b;
+}
+
+#top
+{
+    display: block;
+    width: 100%;
+    height: 30%;
+    
+    background: transparent;
+}
+
+#middle
+{
+    display: block;
+    width: 100%;
+    height: 20%;
+    min-width: 700px;
+    min-height: 100px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    background: transparent;
+    
+}
+
+#gap
+{
+    display: block;
+    width: 100%;
+    height: 20px;
+    min-height: 20px;
+    
+    background: transparent;
+}
+
+#bottom
+{
+    display: block;
+    width: 65px;
+    height: 30px;
+    min-width: 60px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    background: transparent;
+}
+
+a.about
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    
+    margin-left:auto;
+    margin-right: auto;
+    
+    background: url(aboutme.png) no-repeat center center;
+    opacity: .9;
+}
+
+a.about:hover
+{
+    opacity: 1;
+}
+
+a.github
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    
+    margin-left:auto;
+    margin-right: auto;
+    
+    background: url(github.png) no-repeat center center;
+    opacity: .9;   
+}
+
+a.github:hover
+{
+    opacity: 1;
+}
+
+a.mtw
+{
+    display: inline-block;
+    text-align: left;
+    width: 140px;
+    
+    background: transparent;
+}
+
+

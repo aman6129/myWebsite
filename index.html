@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<body onload = "fadein()">
+	<link rel="stylesheet" type="text/css" href="MyCSS.css">
+	
+	<title> Mohammad Anees </title>
+    
+    <div id = "top"> </div>
+    <div id = "middle" > 
+        <h1> Hi my name's Mohammad </h1>
+        <h2> I make things with 
+            <a class = "mtw"> 
+                C++
+            </a>
+        </h2>
+    </div>
+    <div id = "gap"> </div>
+    <div id = "bottom"> 
+        <a class = "about" href = "index.html"></a>
+        <a class = "github" href = "https://github.com/aman6129"></a>
+    </div>
+    
+<!--    text fade in/out javascript goes here, may want to put into seperate .js file for cleaner code-->
+    <script>
+        
+        _opacity = 1;
+        var array = ["C++", "C", "Java", "Javascript", "Haskell", "HTML", "CSS", "Photoshop", "Flash", "Python", "C#" ];
+        var index = 1;
+        
+        function fadein() //text fadein function handles text fading in
+        {
+            if(_opacity <= 1)
+            {
+                _opacity += .05;
+                var text = document.getElementsByClassName("mtw"); //returns an array so we have to cycle through them
+                i = text.length;
+
+                while(i--)
+                {
+                    text[i].style.opacity = String(_opacity);
+                }
+
+                setTimeout("fadein()",50); //recursively call fadein until wanted color is acheived
+            }
+            
+            else
+            {
+                _opacity = 1; //reset hex value
+                setTimeout("fadeout()", 2000); //callto fadout, with a timer of 2 seconds
+            }
+        }
+        
+        function fadeout()///text fadeout function handles text fading out
+        { 
+            if(_opacity >= 0) //same as fadein except we increase the hex value
+            { 
+                _opacity -= .05; // increase color darkness
+                var text = document.getElementsByClassName("mtw");
+                i = text.length;
+
+                while(i--)
+                {
+//                    text[i].style.color="rgb("+hex+","+hex+","+hex+")";
+                    text[i].style.opacity = String(_opacity);
+                }
+
+                setTimeout("fadeout()",25); 
+            }
+            else
+            {
+                _opacity = 0; //reset hex value
+                var text = document.getElementsByClassName("mtw");
+                i = text.length;
+                
+                //choosing the index of the new word
+                if(index + 1 > array.length - 1)
+                    index = 0;
+                else
+                    index++;
+                
+                while(i--)
+                {
+                    text[i].innerText = array[index]; //assigning new word to the html
+                    text[i].style.opacity = "0";
+                }
+                setTimeout("fadein()", 1000); //start fading in after 1 second
+            }
+            //end script
+        }
+    </script>
+<!--    end of javascript-->
+
+
+</body>
+</html>
