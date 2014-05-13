@@ -34,11 +34,12 @@ body
     padding: 0;
 }
 
+
 #rainbow
 {
     display: block;
     width: 100%;
-    height: 10px;
+    height: 20px;
     
     color: transparent;
 }
@@ -62,7 +63,7 @@ body
 {
     display: block;
     width: 100%;
-    height: 10px;
+    height: 5px;
     background: transparent;
 }
 
@@ -83,12 +84,38 @@ body
     text-align: center;
     word-spacing: 2px;
     line-height: 23px;
-
     color: #1b1b1b;
     
 }
 
-#pic
+#project
+{
+    display: block;
+    width: 55%;
+    height: 110px;
+    min-width: 700px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: Font;
+    font-size: 20px;
+    text-align: left;
+    word-spacing: 2px;
+    line-height: 18px;
+    color: #1b1b1b;
+    
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    
+    opacity: .9;
+    background: transparent;
+    
+}
+
+
+#pic_of_me
 {
     display: block;
     width: 457px;
@@ -99,111 +126,20 @@ body
     margin-right: auto;
     
     
-    background: url(me.png) no-repeat center center;
+/*    background: url(me.png) no-repeat center center;*/
 }
+
 
 
 /* Class definitions for <a></a> tags--------------------------------------------------------*/
 a
 {
     text-decoration: none;
-    color: #ff5d5d;
+    color: #ea4c4c;
+    opacity: .9;
 }
 
 a:hover
-{
-    color: #eb5e5e;
-}
-/*class definition for about button----------------------------------------------------------*/
-a.about
-{
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-    
-    margin-left:auto;
-    margin-right: auto;
-    
-    background: url(aboutme.png) no-repeat center center;
-    opacity: .8;
-}
-a.about:hover
-{
-    opacity: .9;
-    margin-bottom: -1px;
-}
-a.about:active
-{
-    opacity: 1;
-}
-
-/*class definition for github button----------------------------------------------------------*/
-a.github
-{
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-    
-    margin-left:auto;
-    margin-right: auto;
-    
-    background: url(github.png) no-repeat center center;
-    opacity: .8;   
-}
-a.github:hover
-{
-    opacity: .9;
-    margin-bottom: -1px;
-}
-a.github:active
-{
-    opacity: 1;
-}
-
-/*class definition for projects button----------------------------------------------------------*/
-a.projects
-{
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-    
-    margin-left:auto;
-    margin-right: auto;
-    
-    background: url(projects.png) no-repeat center center;
-    opacity: .8;   
-}
-a.projects:hover
-{
-    opacity: .9;
-    margin-bottom: -1px;
-
-}
-a.projects:active
-{
-    opacity: 1;
-}
-
-/*class definition for contact button----------------------------------------------------------*/
-a.contact
-{
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-    
-    margin-left:auto;
-    margin-right: auto;
-    
-    background: url(contact.png) no-repeat center center;
-    opacity: .8;   
-    
-}
-a.contact:hover
-{
-    opacity: .9;
-    margin-bottom: -1px;
-}
-a.contact:active
 {
     opacity: 1;
 }
