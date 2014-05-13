@@ -5,30 +5,28 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 <body onload = "fadein()">
-	<link rel="stylesheet" type="text/css" href="MyCSS.css">
+	<link rel="stylesheet" type="text/css" href="homeCSS.css">
 	
 	<title> Mohammad Anees </title>
     
     <div id = "top"> </div>
-    <div id = "middle" > 
-        <h1> Hi my name's Mohammad </h1>
-        <h2> I make things with 
-            <a class = "mtw"> 
-                C++
-            </a>
-        </h2>
-    </div>
+    <div id = "middle_1" > Hi my name's Mohammad </div>
+    <div id = "middle_2"> I make things with <a class = "mtw"> C++ </a></div>
+    
     <div id = "gap"> </div>
     <div id = "bottom"> 
-        <a class = "about" href = "index.html"></a>
-        <a class = "github" href = "https://github.com/aman6129"></a>
+        <a class = "about" title = "about" href = "about.html"></a>
+        <a class = "github" title = "github" href = "https://github.com/aman6129"></a>
+        <a class = "projects" title = "projects" href = "index.html"></a>
+        <a class = "contact" title = "contact" href = "index.html"></a>
     </div>
+    
     
 <!--    text fade in/out javascript goes here, may want to put into seperate .js file for cleaner code-->
     <script>
         
         _opacity = 1;
-        var array = ["C++", "C", "Java", "Javascript", "Haskell", "HTML", "CSS", "Photoshop", "Flash", "Python", "C#" ];
+        var array = ["C++", "C", "Java", "Javascript", "Python", "Haskell", "C#", "HTML", "CSS", "Photoshop", "Flash", "Illustrator" ];
         var index = 1;
         
         function fadein() //text fadein function handles text fading in
@@ -64,7 +62,6 @@
 
                 while(i--)
                 {
-//                    text[i].style.color="rgb("+hex+","+hex+","+hex+")";
                     text[i].style.opacity = String(_opacity);
                 }
 
@@ -85,11 +82,11 @@
                 while(i--)
                 {
                     text[i].innerText = array[index]; //assigning new word to the html
+                    text[i].textContent = array[index]; //for firefox :|
                     text[i].style.opacity = "0";
                 }
-                setTimeout("fadein()", 1000); //start fading in after 1 second
+                setTimeout("fadein()", 500); //start fading in after 1 second
             }
-            //end script
         }
     </script>
 <!--    end of javascript-->
