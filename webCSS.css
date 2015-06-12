@@ -34,6 +34,13 @@ body
     padding: 0;
 }
 
+#days-since
+{
+    margin-top: 100px;
+    font-size: 200px;
+    color: #ea4c4c;
+    opacity: .8;
+}
 
 #rainbow
 {
