@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="webCSS.css">
+    
+<body onload = "countup(2015,5,22)">
+	<title> Mohammad Anees </title>
+    
+    <div id = "rainbow"></div>
+    <div id = "header"> Days Since Mo's Freaked Out: </div>
+    <div id = "gap"></div>
+    
+    <div id = "page">
+        <div id = "days-since">0 days</div>
+    </div>
+    
+    <script>
+            var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+            function countup(yr,m,d){
+                var today=new Date()
+                var todayy=today.getYear()
+
+                if (todayy < 1000)
+                    todayy+=1900
+
+                var todaym=today.getMonth()
+                var todayd=today.getDate()
+                var todaystring=montharray[todaym]+" "+todayd+", "+todayy
+                var paststring=montharray[m-1]+" "+d+", "+yr
+                var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
+                difference+=" days"
+
+                var text = document.getElementById("days-since")
+                text.innerText = difference
+                text.textContent = difference //for firefox :|
+                //document.write(difference)
+
+            }
+
+    </script>
+</body>
+</html>
