@@ -17,16 +17,8 @@ body {
 	overflow-x: hidden;
 }
 
-h2 {
-	font-size: 70px;
-	font-weight: 100;
-	font-family: 'Roboto', serif;
-	margin: 0px;
-	padding: 0px;
-}
-
 h4 {
-	font-size: 30px;
+	font-size: 35px;
 	font-weight: 100;
 	font-family: 'Roboto', serif;
 }
@@ -40,10 +32,21 @@ h3 {
 
 h2 {
 	display: inline-block;
-	font-size: 60px;
+	font-size: 25px;
 	font-weight: 100;
 	font-family: 'Roboto', serif;
-	color: #FEBDA5;
+	color: white;
+	padding: 0px;
+	margin: 5px 0px 0px 5px;
+}
+
+p {
+	font-size: 25px;
+	font-weight: 100;
+	line-height: 35px;
+	font-family: 'Roboto', serif;
+	color: white;
+	margin-top: 5px;
 }
 
 .m-15 {
@@ -140,7 +143,7 @@ h2 {
 .button-link {
 	color: #FEBDA5;
 	transition: color 0.4s ease;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: 'Roboto', serif;
 	font-weight: 300;
 	margin: 0px 10px 0px 0px;
@@ -176,5 +179,16 @@ h2 {
 	padding: 30px 0px 0px 0px;
 	margin: 0px;
 	background-color: rgba(0,0,0, 0.9);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: white;
+}
+
+.project-title {
+	color: #FEBDA5;
+	font-size: 30px;
+	font-family: 'Roboto', serif;
+	font-weight: 300;
 }
