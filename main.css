@@ -1,12 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
 
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 body {
 	background: url(images/dusk.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 h2 {
@@ -30,12 +38,27 @@ h3 {
 	font-family: 'Roboto', serif;
 }
 
+h2 {
+	display: inline-block;
+	font-size: 60px;
+	font-weight: 100;
+	font-family: 'Roboto', serif;
+	color: #FEBDA5;
+}
+
 .m-15 {
 	margin-top: 15px;
 }
 
 .color-primary {
 	color: #FEBDA5;
+}
+
+.splitter {
+	border-top-style: solid;
+	border-color: rgba(255,255,255, 0.5);
+	border-top-width: 1px;
+	margin: 30px -50px 30px -50px;
 }
 
 .mtw{
@@ -54,15 +77,22 @@ h3 {
 	margin-top: 30%;
 }
 
-.navbar{
+.navbar {
 	position: fixed;
 	z-index: 10;
 	top: 0px;
 	padding: 5px 15px 5px 15px;
-	height: 65px;
-	width: 100%;
-	background-color: transparent;
+	margin-left: -5px;
+	height: 60px;
+	width: 110%;
+	transition: background-color 0.4s ease;
+	background-color: rgba(255,255,255, 0.2);
+	/*background-color: white;*/
 	display: inline-block;
+}
+
+.navbar:hover {
+	background-color: rgba(255,255,255, 0.3)
 }
 
 .title-navbar {
@@ -107,20 +137,30 @@ h3 {
 
 }
 
+.button-link {
+	color: #FEBDA5;
+	transition: color 0.4s ease;
+	font-size: 40px;
+	font-family: 'Roboto', serif;
+	font-weight: 300;
+	margin: 0px 10px 0px 0px;
+
+}
+
 .button-main:hover{
 	color: #FEBDA5;
 	text-decoration: none;
 	background-color: rgba(0,0,0, 0.4);
 }
 
-.button-secondary:hover{
-	background-color: green;
-}
-
 .button-navbar:hover{
 	background-color: rgba(0,0,0, 0.2);
 }
 
+.button-link:hover {
+	text-decoration: none;
+	color: #FFD7C9;
+}
 .scroll-more {
 	display: block;
 	position: absolute;
@@ -130,10 +170,10 @@ h3 {
 
 .scroll-container {
 	position: absolute;
-	bottom: -800px;
+	bottom: -5000px;
 	width: 100%;
-	height: 800px;
-	padding: 30px 0px 0px 30px;
+	height: 5000px;
+	padding: 30px 0px 0px 0px;
 	margin: 0px;
 	background-color: rgba(0,0,0, 0.9);
 	color: white;
