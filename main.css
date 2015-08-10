@@ -54,7 +54,7 @@ p {
 }
 
 .l-m-25 {
-	margin-left: 25px;
+	margin-left: 45px;
 }
 
 .color-primary {
@@ -214,4 +214,16 @@ p {
 	font-size: 30px;
 	font-family: 'Roboto', serif;
 	font-weight: 300;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.footer {
+	margin-top: 50px;
+	background-color: white;
+	display: block;
+	width: 101%;
+	height: 200px;
 }

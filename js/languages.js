@@ -2,7 +2,7 @@
         _opacity = 1;
         // var array = ["C++", "C", "Java", "Javascript", "Python", "Haskell", "C#", "HTML", "CSS", "Photoshop", "Flash", "Illustrator" ];
         //make each a link to its respective wiki entry
-        var array = ["c++", "c", "java", "javascript", "coffescript", "python", "haskell", "c#", "html", "css", "photoshop", "flash", "Illustrator"]; 
+        var array = ["c++", "c", "java", "javascript", "coffescript", "ruby", "python", "haskell", "c#", "html", "css", "photoshop", "flash", "Illustrator"]; 
         var index = 1;
         
         function fadein() //text fadein function handles text fading in
