@@ -224,6 +224,12 @@ p {
 	font-weight: 300;
 }
 
+.project-img {
+	margin: 0 auto;
+	margin-top: 10px;
+	max-width: 350px;
+	max-height: 350px;
+}
 .tech-used {
 	display: block;
 	margin: 5px;
