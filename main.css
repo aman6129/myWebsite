@@ -166,6 +166,15 @@ p {
 }
 
 .button-link {
+	color: #FEBDA5;
+	transition: color 0.4s ease;
+	font-size: 30px;
+	font-family: 'Roboto', serif;
+	font-weight: 300;
+	margin: 0px 10px 0px 0px;
+}
+
+.button-contact {
 	color: white;
 	transition: color 0.4s ease;
 	font-size: 30px;
@@ -200,6 +209,12 @@ p {
 	text-decoration: none;
 	color: #FFD7C9;
 }
+
+.button-contact:hover {
+	text-decoration: none;
+	color: #FFD7C9;
+}
+
 .scroll-more {
 	display: block;
 	position: absolute;
@@ -235,6 +250,7 @@ p {
 	max-width: 350px;
 	max-height: 350px;
 }
+
 .tech-used {
 	display: block;
 	margin: 5px;
