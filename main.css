@@ -69,6 +69,12 @@ p {
 	color: #FEBDA5;
 }
 
+.header {
+	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
 .splitter {
 	border-top-style: solid;
 	border-color: rgba(255,255,255, 0.5);
@@ -224,9 +230,9 @@ p {
 
 .scroll-container {
 	position: absolute;
-	bottom: -2700px;
+	bottom: -2600px;
 	width: 100%;
-	height: 2700px;
+	height: 2600px;
 	padding: 30px 0px 0px 0px;
 	margin: 0px;
 	background-color: rgba(0,0,0, 0.9);
@@ -271,7 +277,7 @@ a:focus{
 
 .footer {
 	padding: 50px 50px 0px 50px;
-	margin: 100px 0px 0px 0px;
+	margin: 100px 0px 50px 0px;
 	background-color: #FEBDA5;
 	color: black;
 	display: block;
