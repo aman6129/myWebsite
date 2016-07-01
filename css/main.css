@@ -1,105 +1,30 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
-@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+
+@fontface{
+	font-family: headerFont;
+	src: url("../fonts/title1.otf")
+}
 
 body
 {
-	margin: 0px;
-	padding: 0px;
-	background-color: white;
-}
-
-h1
-{
-	font-family: 'Oswald', sans-serif;
-	font-size: 80px;
-	margin: 0px;
-
-	text-decoration: none;
-	color: #000;
-	box-shadow: inset 0 -10px 0 #c0e6f7;
-
-}
-
-.title
-{
-	font-family: 'Oswald', sans-serif;
-	font-size: 80px;
-	/*color: white;*/
-}
-
-a
-{
-	font-family: 'PT Mono', serif;
-	font-size: 17px;
-	margin: 0px;
-
-	color: #9C9C9C;
-	transition: box-shadow 0.5s ease;
-	/*transition: color 0.5s ease;*/
-	letter-spacing: 10px;
-	padding-left: 10px; /* fixes issue caused by letter-spacing giving extra space at the end of words */
-	line-height: 4.6;
-	text-align: center;
-	/* gets the underline affect */
-	text-decoration: none;
-	box-shadow: inset 0 -8px 0 transparent;
-
-}
-
-a:hover
-{
-	text-decoration: none;
-	color: #4A4949;
-	box-shadow: inset 0 -8px 0 #c0e6ff;
-}
-
-a:focus
-{
-	text-decoration: none;
-	color: #9C9C9C;
-}
-
-.link-divider
-{
-	font-family: 'PT Mono', serif;
-	font-size: 17px;
-	color: black;
-	position: relative;
-	top: -1px;
+	background-color: #FFF6F0;
 }
 
 .header
 {
-	height: 100vh;
-	background-color: white;
+	padding: 0px;
+
+
+	position: absolute;
+	bottom: -70px;
+	left: 20%;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.Absolute-Center {
-  margin: auto;
-  position: absolute;
-  top: 0px; left: 0; bottom: 0; right: 0;
-}
-
-.header-content
+.headerText
 {
-
-}
-
-.closer
-{
-	margin-top: -50px;
-}
-
-.big
-{
-	font-family: 'Oswald', sans-serif;
-	font-size: 200px;
-	font-weight: 700;
-	color: #FFFF00;
-}
-
-.links
-{
-	position: relative;
-	top: -567px;
+	font-family: headerFont;
+	font-size: 30px;
 }
