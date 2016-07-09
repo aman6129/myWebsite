@@ -1,30 +1,79 @@
 
-@fontface{
+@font-face{
 	font-family: headerFont;
 	src: url("../fonts/title1.otf")
+}
+
+@font-face{
+	font-family: linkFont;
+	src: url("../fonts/body.otf")
+}
+
+html
+{
+	height: 100%;
 }
 
 body
 {
 	background-color: #FFF6F0;
+	margin: 0 auto;
+}
+
+a, a:hover
+{
+	font-style: none;
+	text-decoration: none;
+
+	font-size: 24px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.content-container
+{
+	min-width: 900px;
+	min-height: 900px;
+	background-color: red;
+
 }
 
 .header
 {
-	padding: 0px;
 
-
-	position: absolute;
-	bottom: -70px;
-	left: 20%;
+	width: 900px;
 
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.links
+{
+	font-family: linkFont;
+	text-align: center;
+
+	padding-top: 20px;
+	margin-bottom: 20%;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 .headerText
 {
+	display: block;
 	font-family: headerFont;
-	font-size: 30px;
+	color: #4F4F4F;
+	font-size: 40px;
+	letter-spacing: 40px;
+
+
+	text-align: center;
+
 }
