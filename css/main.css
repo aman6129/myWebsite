@@ -97,7 +97,8 @@ p
 	/*background-color: red;*/
 	padding: 5px 0px 5px 0px;
 
-	transition: background-color 0.5s ease;
+	transition: background-color, color, 0.5s ease;
+
 
 }
 
@@ -106,6 +107,11 @@ p
 	background-color: #fde3d1;
 	color: #5F5F5F;
 }
+
+/*.about-link:hover { background-color: #393939;}
+.projects-link:hover { background-color: #FCFCFC;}
+.experience-link:hover { background-color: #F1C72C;}
+.contact-link:hover {background-color: #6372B5;}*/
 
 .main-container
 {
@@ -221,6 +227,23 @@ p
 	height: 100%;
 	background-color: #6372B5;
 	color: #EEF1FF;
+}
+
+.carousel-container
+{
+	display: block;
+	margin: auto;
+	/*background-color: red;*/
+	margin-top: 36px;
+	width: 658px;
+	height: 410px;
+}
+
+.carousel-item
+{
+	display: block;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
 }
 
 /* cursor */
