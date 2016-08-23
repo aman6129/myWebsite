@@ -35,6 +35,12 @@ a, a:hover, a:visited, a:focus
 	padding-right: 50px;
 }
 
+h3
+{
+	font-size: 25px;
+	font-family: subtitleFont;
+}
+
 h4
 {
 	font-size: 30px;
@@ -48,10 +54,15 @@ p
 	font-family: linkFont;
 }
 
+.gray-text
+{
+	color: #5F5F5F;
+}
+
 .content-container
 {
 	min-width: 900px;
-	height: 100vh;
+	/*height: 100vh;*/
 	/*min-height: 900px;*/
 	/*background-color: red;*/
 
@@ -82,7 +93,7 @@ p
 {
 	display: inline-block;
 	width: 200px;
-	color: #393939;
+	color: #5F5F5F;
 	/*background-color: red;*/
 	padding: 5px 0px 5px 0px;
 
@@ -93,19 +104,19 @@ p
 .link:hover
 {
 	background-color: #fde3d1;
-	color: #393939;
+	color: #5F5F5F;
 }
 
 .main-container
 {
 	height: 100vh;
-	color: #393939;
+	color: #5F5F5F;
 
 }
 
 .about-container
 {
-	height: 800px;
+	height: 900px;
 	background-color: #393939;
 
 	color: #F9E4D5;
@@ -145,6 +156,40 @@ p
 
 }
 
+.projects-container
+{
+	height: 1100px;
+	background-color: #FCFCFC;
+
+	color: #F3C832;
+	text-align: center;
+}
+
+.computer
+{
+	display: inline-block;
+	background-image: url('../assets/macbook.png');
+	width: 870px;
+	height: 503px;
+}
+
+.projects-content
+{
+	padding-top: 40px;
+	paddin-bottom: 40px;
+	display: block;
+	margin: auto;
+	width: 850px
+}
+
+.experience-container
+{
+	height: 100%;
+	background-color: #F1C72C;
+	color: #FFF7F2;
+	text-align: center;
+}
+
 .me-icon
 {
 	width: 450px;
@@ -161,6 +206,21 @@ p
 	right: 50%;
 	left: 50%;
 	width: 30px;
+}
+
+.experience-item
+{
+	display: block;
+	margin: auto;
+	height: 300px;
+	width: 850px;
+}
+
+.contact-container
+{
+	height: 100%;
+	background-color: #6372B5;
+	color: #EEF1FF;
 }
 
 /* cursor */

@@ -19,4 +19,8 @@ $(document).ready(function(){
         backDelay: 1500,
         loop: true
     });
+
+    $('#slides').slick({
+        
+    })
 });
