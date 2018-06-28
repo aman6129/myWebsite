@@ -41,6 +41,7 @@ html,body{
 
 .control-button{
     font-family: 'Playfair Display', serif;
+    font-style: italic;
     font-size: 18px;
     text-align: center;
     color: white;
@@ -87,6 +88,7 @@ html,body{
 
 .landing-logo-text{
     font-family: 'Playfair Display', serif;
+    font-style: italic;
     font-weight: 900;
     font-size: 80px;
     line-height: 80px;
