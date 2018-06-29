@@ -60,3 +60,25 @@ window.addEventListener("optimizedResize", function() {
     windowHeight = window.innerHeight - controlsHeight;
     toggleControlsState();
 });
+
+var typedTextEl = document.getElementById('typed-text');
+var typedTextContent = ['ABCDEFGH', 'CDDGEASSDG', 'ASDASDASDASD'];
+var typedTextIndex = 0;
+var maxIndex = typedTextContent.length - 1;
+
+function getCurrentTypedText(){
+    var typedText = typedTextContent[typedTextIndex];
+    if(typedTextIndex < maxIndex) { ++typedTextIndex; }
+    else { typedTextIndex = 0 }
+
+    return typedText;
+}
+
+function typeWriteText(){
+    var textToDisplay = getCurrentTypedText();
+    var displayText = '';
+    for(let i = 0; i < textToDisplay.length; ++i){
+        
+        
+    }
+}

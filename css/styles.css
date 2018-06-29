@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i,900i|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i,900i|Roboto:300');
 
 html,body{
     margin: 0px;
@@ -64,8 +64,6 @@ html,body{
     vertical-align: top;
     transition: 0.3s ease all;
     opacity: .6;
-    /* position: relative;
-    z-index: -1; */
 }
 
 .about-bk{
@@ -88,56 +86,11 @@ html,body{
     width: 15px;
 }
 
-.landing-container{
-    width: 100%;
-    height: 100vh;
-    display: block;
-}
-
-.landing-logo-container{
-    position: absolute;
-    bottom: 0px;
-    left: calc(50% - 333px);
-}
-
-.landing-logo-text-container{
-    display: inline-block;
-    margin-left: -28px;
-}
-
-.landing-logo-border{
-    display: inline-block;
-    width: 60px;
-    height: 70vh;
-    background-color: rgba(255, 165, 0, 0.5);
-    vertical-align: top;
-
-    position: relative;
-    z-index: 9;
-
-}
-
-.landing-logo-text{
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-weight: 900;
-    font-size: 80px;
-    line-height: 80px;
-    letter-spacing: -5px;
-}
-
-.about-container{
-    display: block;
-    width: 100%;
-    height: 1000px;
-    padding: 20px 50px;
-    background-color: #222222;
-}
-
 .title-container{
     display: block;
     width: 100%;
     height: 110px;
+    margin-bottom: 50px;
 }
 
 .title-background{

@@ -1,0 +1,66 @@
+.about-container{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px 0px 50px;
+    background-color: #222222;
+
+    font-size: 0px;
+}
+
+.about-text-container{
+    display: inline-block;
+    width: 50%;
+
+    vertical-align: top;
+}
+
+.typewriter-text-container{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+
+    font-style: italic;
+}
+
+.typewriter-text-container > #typed-text{
+    color: yellow;
+}
+
+.typewriter-text-container > .text-cursor{
+    font-style: normal;
+    font-size: 45px;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 0.5s linear forwards;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+.about-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+
+.about-cartoon-container{
+    display: inline-block;
+    /* max-width: 650px; */
+    width: 50%;
+    /* background-color: red; */
+
+}
+
+.cartoon-scene{
+    display: block;
+    width: 100%;
+}
