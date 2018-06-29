@@ -6,6 +6,7 @@
     background-color: #222222;
 
     font-size: 0px;
+    font-weight: 100;
 }
 
 .about-text-container{
@@ -31,8 +32,8 @@
 .typewriter-text-container > .text-cursor{
     font-style: normal;
     font-size: 45px;
-    -webkit-animation: fadeinout 4s linear forwards;
-    animation: fadeinout 0.5s linear forwards;
+    -webkit-animation: fadeinout 0.5s ease forwards;
+    animation: fadeinout 0.5s ease forwards;
     animation-iteration-count: infinite;
     opacity: 0;
 }
