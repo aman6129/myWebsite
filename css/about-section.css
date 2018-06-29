@@ -26,7 +26,8 @@
 }
 
 .typewriter-text-container > #typed-text{
-    color: yellow;
+    color: #00E3FF;
+    opacity: .8;
 }
 
 .typewriter-text-container > .text-cursor{
@@ -55,13 +56,12 @@
 
 .about-cartoon-container{
     display: inline-block;
-    /* max-width: 650px; */
     width: 50%;
-    /* background-color: red; */
-
 }
 
 .cartoon-scene{
     display: block;
     width: 100%;
+
+    margin-top: 40px;
 }

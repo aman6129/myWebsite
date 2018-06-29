@@ -73,12 +73,3 @@ function getCurrentTypedText(){
 
     return typedText;
 }
-
-function typeWriteText(){
-    var textToDisplay = getCurrentTypedText();
-    var displayText = '';
-    for(let i = 0; i < textToDisplay.length; ++i){
-        
-        
-    }
-}
