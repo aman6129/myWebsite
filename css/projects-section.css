@@ -1,0 +1,14 @@
+div.projects-container.content{
+    display: block;
+    width: 100%;
+    height: 1100px;
+    padding: 20px 0px 0px 50px;
+    background-color: #FFED00;
+
+    font-size: 0px;
+    font-weight: 100;
+}
+
+.projects-container > .title-container > .title-text{
+    color: #222222;
+}
