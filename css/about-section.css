@@ -31,8 +31,10 @@ div.about-container.content{
 }
 
 .typewriter-text-container > .text-cursor{
-    font-style: normal;
     font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: -10px;
     -webkit-animation: fadeinout 0.5s ease forwards;
     animation: fadeinout 0.5s ease forwards;
     animation-iteration-count: infinite;

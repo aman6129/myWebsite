@@ -1,5 +1,6 @@
 // Mohammad Anees
 // 6/27/2018
+// script to handle controls transitions and position
 
 var controls = document.getElementById('controls');
 var contentDivs = document.getElementsByClassName('content');
@@ -10,7 +11,6 @@ var windowHeight = window.innerHeight - controlsHeight;
 var ticking = false;
 
 function createDivBoundings(){
-    doc = document.getElementsByTagName('html')[0];
     var windowHeight = window.innerHeight - controls.getBoundingClientRect().height;
     var divBoundings = [];
     var classColorList = {
@@ -30,12 +30,10 @@ function createDivBoundings(){
             backgroundColor: classColorList[className].backgroundColor,
             textColor: classColorList[className].textColor,
             target: contentDiv,
-            scrollHeight: contentDiv.scrollHeight,
             topLimit: divTopLimit,
             bottomLimit: divBottomLimit
         });
     }
-    console.log(divBoundings);
     return divBoundings;
 }
 
@@ -117,16 +115,3 @@ window.addEventListener("optimizedResize", function() {
     toggleControlsState();
     adjustControlsColors();
 });
-
-var typedTextEl = document.getElementById('typed-text');
-var typedTextContent = ['ABCDEFGH', 'CDDGEASSDG', 'ASDASDASDASD'];
-var typedTextIndex = 0;
-var maxIndex = typedTextContent.length - 1;
-
-function getCurrentTypedText(){
-    var typedText = typedTextContent[typedTextIndex];
-    if(typedTextIndex < maxIndex) { ++typedTextIndex; }
-    else { typedTextIndex = 0 }
-
-    return typedText;
-}
