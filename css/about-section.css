@@ -31,14 +31,20 @@ div.about-container.content{
 }
 
 .typewriter-text-container > .text-cursor{
-    font-size: 45px;
-    font-style: italic;
-    font-weight: bold;
-    margin-left: -10px;
     -webkit-animation: fadeinout 0.5s ease forwards;
     animation: fadeinout 0.5s ease forwards;
     animation-iteration-count: infinite;
     opacity: 0;
+    
+    display: inline-block;
+    width: 3px;
+    border-radius: 1px;
+    height: 40px;
+    background-color: white;
+
+    margin-left: -3px;
+    margin-bottom: -5px;
+
 }
 
 @-webkit-keyframes fadeinout {

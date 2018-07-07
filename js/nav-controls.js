@@ -10,13 +10,25 @@ var controlsHeight = controls.getBoundingClientRect().height;
 var windowHeight = window.innerHeight - controlsHeight;
 var ticking = false;
 
+function reInitWindowRelativeVariables(){
+    windowHeight = window.innerHeight - controlsHeight;
+    divBoundings = createDivBoundings();
+    toggleControlsState();
+    adjustControlsColors();
+}
+
+window.addEventListener('load', function(){
+    reInitWindowRelativeVariables();
+})
+
 function createDivBoundings(){
     var windowHeight = window.innerHeight - controls.getBoundingClientRect().height;
     var divBoundings = [];
     var classColorList = {
         'about-container content' : { backgroundColor: '#222222', textColor: 'white' } ,
         'projects-container content' : { backgroundColor: '#FFED00', textColor: '#222222' },
-        'experience-container content' : { backgroundColor: '#1336E4', textColor: 'white' }
+        'experience-container content' : { backgroundColor: '#1336E4', textColor: 'white' },
+        'contact-container content' : { backgroundColor: '#FFAAAE', textColor: '#222222' }
     }
     for(var i = 0; i < contentDivs.length; ++i){
         contentDiv = contentDivs[i];
@@ -105,13 +117,12 @@ window.addEventListener('scroll', function(e) {
     };
 
     /* init - you can init any event */
-    throttle("resize", "optimizedResize");
+    throttle('resize', 'optimizedResize');
 })();
 
 // handle event
-window.addEventListener("optimizedResize", function() {
-    windowHeight = window.innerHeight - controlsHeight;
-    divBoundings = createDivBoundings();
-    toggleControlsState();
-    adjustControlsColors();
+window.addEventListener('optimizedResize', function() {
+    reInitWindowRelativeVariables();
 });
+
+
