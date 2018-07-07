@@ -113,6 +113,7 @@ window.addEventListener('scroll', function(e) {
 // handle event
 window.addEventListener("optimizedResize", function() {
     windowHeight = window.innerHeight - controlsHeight;
+    divBoundings = createDivBoundings();
     toggleControlsState();
     adjustControlsColors();
 });
