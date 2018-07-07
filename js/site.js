@@ -11,15 +11,18 @@ var ticking = false;
 
 function createDivBoundings(){
     doc = document.getElementsByTagName('html')[0];
+    var windowHeight = window.innerHeight - controls.getBoundingClientRect().height;
     var divBoundings = [];
     var classColorList = {
         'about-container content' : { backgroundColor: '#222222', textColor: 'white' } ,
-        'projects-container content' : { backgroundColor: '#FFED00', textColor: '#222222' }
+        'projects-container content' : { backgroundColor: '#FFED00', textColor: '#222222' },
+        'experience-container content' : { backgroundColor: '#1336E4', textColor: 'white' }
     }
     for(var i = 0; i < contentDivs.length; ++i){
         contentDiv = contentDivs[i];
-        var divTopLimit = contentDiv.scrollHeight;
-        var divBottomLimit = divTopLimit + window.innerHeight - 50;
+        var divTopLimit = windowHeight;
+        if(divBoundings[i-1] !== undefined) divTopLimit = divBoundings[i-1].bottomLimit;
+        var divBottomLimit = divTopLimit + contentDiv.getBoundingClientRect().height;
         var className = contentDiv.classList.toString();
 
         divBoundings.push({
@@ -111,6 +114,7 @@ window.addEventListener('scroll', function(e) {
 window.addEventListener("optimizedResize", function() {
     windowHeight = window.innerHeight - controlsHeight;
     toggleControlsState();
+    adjustControlsColors();
 });
 
 var typedTextEl = document.getElementById('typed-text');
