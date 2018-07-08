@@ -14,10 +14,10 @@
 <body>
 	<div id="controls" class="controls absolute">
 		<div class="controls-container">
-			<div class="control-button"><div class="background about-bk"></div>about</div>
-			<div class="control-button"><div class="background projects-bk"></div>projects</div>
-			<div class="control-button"><div class="background experience-bk"></div>experience</div>
-			<div class="control-button"><div class="background contact-bk"></div>contact</div>
+			<div class="control-button" id="about-btn">about<div class="background about-bk"></div></div>
+			<div class="control-button" id="projects-btn">projects<div class="background projects-bk"></div></div>
+			<div class="control-button" id="experience-btn">experience<div class="background experience-bk"></div></div>
+			<div class="control-button" id="contact-btn">contact<div class="background contact-bk"></div></div>
 		</div>
 	</div>
 	<div class="landing-container">
@@ -125,12 +125,18 @@
 			<div class="title-background contact-bk"></div>
 			<div class="title-text">Some ways to reach me...</div>
 		</div>
-		<div class="contact-field left">Email<div class="underline contact-bk"></div></div>
-		<div class="contact-field middle" onclick="routeTo('https://github.com/aman6129')">
-			Github<div class="underline contact-bk"></div>
-		</div>
-		<div class="contact-field right" onclick="routeTo('https://linkedin.com/in/mohammad-anees-68b7127a')">
-			LinkedIn<div class="underline contact-bk"></div>
+		<div class="contact-content">
+			<div class="contact-field left" onclick="routeTo('mailto:mail@mohammadanees.com')">
+				<span>Email</span>
+				<div class="underline contact-bk"></div></div>
+			<div class="contact-field middle" onclick="routeTo('https://github.com/aman6129')">
+				<span>Github</span>
+				<div class="underline contact-bk"></div>
+			</div>
+			<div class="contact-field right" onclick="routeTo('https://linkedin.com/in/mohammad-anees-68b7127a')">
+				<span>LinkedIn</span>
+				<div class="underline contact-bk"></div>
+			</div>
 		</div>
 	</div>
 </body>

@@ -59,13 +59,19 @@ html,body{
 
 .control-button > .background{
     display: inline-block;
-    height: 50px;
-    width: 0px;
-    margin-left: -10px;
-    position: absolute;
+    height: 0px;
+    width: 200px;
+    margin-top: -20px;
+    position: relative;
     vertical-align: top;
     transition: 0.3s ease all;
     opacity: .6;
+    padding: 0px 20px;
+}
+
+.control-button:hover > .background, 
+.control-button.active > .background{
+    height: 10px;
 }
 
 .about-bk{
@@ -82,10 +88,6 @@ html,body{
 
 .contact-bk{
     background-color: #D4FF00;
-}
-
-.control-button:hover > .background{
-    width: 15px;
 }
 
 .title-container{

@@ -5,12 +5,14 @@
 var controls = document.getElementById('controls');
 var contentDivs = document.getElementsByClassName('content');
 var activeDiv = contentDivs[0];
+var activeControlButton = document.getElementById('about-btn');
 var divBoundings = createDivBoundings();
 var controlsHeight = controls.getBoundingClientRect().height;
 var windowHeight = window.innerHeight - controlsHeight;
 var ticking = false;
 
 function reInitWindowRelativeVariables(){
+    activeControlButton.classList.add('active');
     windowHeight = window.innerHeight - controlsHeight;
     divBoundings = createDivBoundings();
     toggleControlsState();
@@ -25,10 +27,10 @@ function createDivBoundings(){
     var windowHeight = window.innerHeight - controls.getBoundingClientRect().height;
     var divBoundings = [];
     var classColorList = {
-        'about-container content' : { backgroundColor: '#222222', textColor: 'white' } ,
-        'projects-container content' : { backgroundColor: '#FFED00', textColor: '#222222' },
-        'experience-container content' : { backgroundColor: '#1336E4', textColor: 'white' },
-        'contact-container content' : { backgroundColor: '#FFAAAE', textColor: '#222222' }
+        'about-container content' : { backgroundColor: '#222222', textColor: 'white', controlId: 'about-btn' } ,
+        'projects-container content' : { backgroundColor: '#FFED00', textColor: '#222222', controlId: 'projects-btn' },
+        'experience-container content' : { backgroundColor: '#1336E4', textColor: 'white', controlId: 'experience-btn' },
+        'contact-container content' : { backgroundColor: '#FFAAAE', textColor: '#222222', controlId: 'contact-btn' }
     }
     for(var i = 0; i < contentDivs.length; ++i){
         contentDiv = contentDivs[i];
@@ -41,6 +43,7 @@ function createDivBoundings(){
             name: className,
             backgroundColor: classColorList[className].backgroundColor,
             textColor: classColorList[className].textColor,
+            controlId: classColorList[className].controlId,
             target: contentDiv,
             topLimit: divTopLimit,
             bottomLimit: divBottomLimit
@@ -80,9 +83,16 @@ function adjustControlsColors(){
         if(currentDiv.name !== activeDiv.classList.toString()){
             divBackgroundColor = currentDiv.backgroundColor;
             divTextColor = currentDiv.textColor;
+
             controls.style.backgroundColor = divBackgroundColor;
             controls.style.color = divTextColor;
+
+            var newControlButton = document.getElementById(currentDiv.controlId);
+            newControlButton.classList.add('active');
+            activeControlButton.classList.remove('active');
+
             activeDiv = currentDiv.target;
+            activeControlButton = newControlButton
         }
     }
 }
