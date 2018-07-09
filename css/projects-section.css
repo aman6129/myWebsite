@@ -14,11 +14,25 @@ div.projects-container.content{
     color: #222222;
 }
 
-.computer{
-    width: 100%;
-    max-width: 900px;
+.projects-carousel-container{
+    background-image: url('../assets/computer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    min-width: 900px;
+}
+
+.computer-screen{
     display: block;
     margin: auto;
+    height: 425px;
+    transform: translateY(55px);
+    width: 680px;
+
+    transition: 0.3s ease all;
+    cursor: pointer;
+
 }
 
 .projects-descriptions-container{
@@ -37,6 +51,7 @@ div.projects-container.content{
     width: 50%;
     height: 100%;
     font-size: 20px;
+
 }
 
 .projects-content > .title {
@@ -47,9 +62,41 @@ div.projects-container.content{
 }
 
 .projects-content > .text{
-    padding: 10px 20px;
+    padding: 0px 20px;
     font-size: 20px;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
 
+    transition: 0.3s ease all;
+}
+
+.project-name{
+    font-size: 34px;
+    font-weight: 900;
+    font-family: 'Playfair-Display', serif;
+    font-style: italic;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: -15px;
+    height: 40px;
+
+    transition: 0.3s ease all;
+}
+
+.project-name > .background{
+    height: 0px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: -15px;
+    position: relative;
+    vertical-align: top;
+    transition: 0.3s ease all;
+    opacity: .6;
+
+    margin-bottom: 10px;
+}
+
+.project-name:hover > .background{
+    height: 15px;
 }
