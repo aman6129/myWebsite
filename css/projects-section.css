@@ -52,6 +52,7 @@ div.projects-container.content{
     height: 100%;
     font-size: 20px;
 
+    vertical-align: top;
 }
 
 .projects-content > .title {
@@ -92,11 +93,11 @@ div.projects-container.content{
     position: relative;
     vertical-align: top;
     transition: 0.3s ease all;
-    opacity: .6;
+    opacity: .4;
 
     margin-bottom: 10px;
 }
 
 .project-name:hover > .background{
-    height: 15px;
+    height: 12px;
 }

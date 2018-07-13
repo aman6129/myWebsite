@@ -5,8 +5,8 @@
 var typedTextEl = document.getElementById('typed-text');
 var typedStingsList = [
     'AngularJS', 'Angular 2+', 'HTML', 'Python', 'CSS/LESS/SASS',
-    'batman.js', 'Ruby on Rails', 'Javascript' ,'Typescript', 'CoffeScript',
-    'C# and .NET', 'PCF', 'AWS', 'JQuery', 'Sketch', 'Photoshop', 'TFS', 'git', 'SVN'
+    'batman.js', 'Ruby on Rails', 'Javascript' ,'Typescript', 'CoffeeScript',
+    'C# and .NET', 'Pivotal Cloud Foundry', 'AWS', 'JQuery', 'Sketch', 'Photoshop', 'TFS', 'git', 'SVN'
 ];
 var currentString = '';
 var stringIndex = 0;

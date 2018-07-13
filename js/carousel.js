@@ -19,8 +19,15 @@ var projectContents = [
         name: 'katfacts', 
         siteUrl: 'http://katfacts.herokuapp.com',
         imageUrl: 'katfacts.png', 
-        aboutText: 'C', 
-        builtWithText: 'D' 
+        aboutText: 'A fun little project we did for HackTX 2013 at UT Austin. Sends one text-message of a made up fact about cats to the number submitted.', 
+        builtWithText: 'Built using python, HTML, CSS, and Twilio API.' 
+    },
+    {
+        name: 'stockbriefs',
+        situeUrl: 'http://stockbriefs.herokuapp.com',
+        imageUrl: 'stockbriefs.png',
+        aboutText: 'A web-app that assists users in investing decisions by providing stock forecasts based on data mined from twitter, NY Times, and Javascript. Made as hackathon project for HackRice 2016',
+        builtWithText: 'ur mum m8'
     }
 ];
 var currentProjectIndex = 0;
