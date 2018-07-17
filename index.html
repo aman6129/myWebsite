@@ -14,10 +14,10 @@
 <body>
 	<div id="controls" class="controls absolute">
 		<div class="controls-container">
-			<div class="control-button" id="about-btn">about<div class="background about-bk"></div></div>
-			<div class="control-button" id="projects-btn">projects<div class="background projects-bk"></div></div>
-			<div class="control-button" id="experience-btn">experience<div class="background experience-bk"></div></div>
-			<div class="control-button" id="contact-btn">contact<div class="background contact-bk"></div></div>
+			<div class="control-button" id="about-btn" onclick="scrollToDiv(0)">about<div class="background about-bk"></div></div>
+			<div class="control-button" id="projects-btn" onclick="scrollToDiv(1)">projects<div class="background projects-bk"></div></div>
+			<div class="control-button" id="experience-btn" onclick="scrollToDiv(2)">experience<div class="background experience-bk"></div></div>
+			<div class="control-button" id="contact-btn" onclick="scrollToDiv(3)">contact<div class="background contact-bk"></div></div>
 		</div>
 	</div>
 	<div class="landing-container">
@@ -94,7 +94,17 @@
 			</div>
 			<div class="service-length">June 2016 to Present</div>
 			<div class="experience">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				<p>
+					I work as a software developer in the Manufacturing Quality division at GM. Our focus is primarily on developing
+					applications in conjunction with our many manufacturing plants to improve the quality of the vehicles we produce.
+				</p>
+				<p>
+					I have a variety of responsibilites ranging from development, to dev-ops, architecting our future projects,
+					and developing and evangalizing reusable programming solutions to be used throughout the organization. 
+				</p>
+				<p>
+					My general day to day tech stack involves Angular (all versions) and .NET Core.  
+				</p>
 			</div>
 		</div>
 		<div class="position-container">
@@ -107,7 +117,7 @@
 				Main focus was software development with the Marketing Analytics Team for Silicon Labs. 
 				The primary project I worked on was building a desktop application to get and store data to salesforce. 
 				Built the application using web-technologies ported to a desktop environment allowing the application 
-				to work consistantly across all platforms.
+				to work consistently across all platforms.
 			</div>
 		</div>
 		<div class="position-container">
@@ -121,6 +131,12 @@
 				A strong focus on using front-end frameworks in relation with Ruby on Rails to create a dynamic web-app. 
 				The technologies used included Ruby on Rails, Coffescript, HTML5, CSS3, batman.js, as well as AWS and 
 				postgreSQL for storage and backend purposes.
+			</div>
+		</div>
+		<div class="position-container">
+			<div class="company-pos resume-link" onclick="routeTo('./assets/anees_resume.pdf')">
+				<span class="text">resume</span>
+				<span class="underline experience-bk"></span>
 			</div>
 		</div>
 	</div>

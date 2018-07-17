@@ -34,6 +34,25 @@ div.experience-container.content{
     font-style: italic;
 }
 
+.company-pos.resume-link{
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.company-pos.resume-link > .text{
+    font-size: 34px;
+}
+
+.company-pos.resume-link > .underline {
+    height: 0px;
+    transition: 0.3s ease all;
+}
+
+.company-pos.resume-link:hover > .underline{
+    height: 15px;
+}
+
 .company-pos > .underline{
     display: block;
     width: 100%;
@@ -57,4 +76,13 @@ div.experience-container.content{
     font-weight: 100;
     font-size: 20px;
 
+}
+
+.experience > p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.experience > p:last-child{
+    margin-bottom: 0px;
 }

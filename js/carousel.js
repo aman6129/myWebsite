@@ -27,7 +27,7 @@ var projectContents = [
         situeUrl: 'http://stockbriefs.herokuapp.com',
         imageUrl: 'stockbriefs.png',
         aboutText: 'A web-app that assists users in investing decisions by providing stock forecasts based on data mined from twitter, NY Times, and Javascript. Made as hackathon project for HackRice 2016',
-        builtWithText: 'ur mum m8'
+        builtWithText: 'Made with Python, Flask, HTML5, Javascript and JQuery. As well as utilizing MS Azure Machine Learning'
     }
 ];
 var currentProjectIndex = 0;

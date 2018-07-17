@@ -135,4 +135,10 @@ window.addEventListener('optimizedResize', function() {
     reInitWindowRelativeVariables();
 });
 
+function scrollToDiv(scrollIndex){
+    var divBounds = divBoundings[scrollIndex];
+    if(divBounds !== undefined){
+        window.scrollTo(0, divBounds.topLimit);
+    }
+}
 
