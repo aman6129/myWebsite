@@ -71,7 +71,6 @@ function fadeProjectContentIn(content){
 
 function nextProject(){
     var projectToDisplay = getPreviousProject();
-    console.log(projectToDisplay);
     fadeProjectContentOut();
     fadeProjectContentIn(projectToDisplay);
 }
